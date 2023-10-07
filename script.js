@@ -11,7 +11,7 @@ const swiper = new Swiper('.swiper', {
 
 let clickButton = document.querySelector('.section-form__button');
 let textButton = document.querySelector('.section-form__label');
-let elemSectionUl = document.querySelector('.section-container');
+let elemSectionUl = document.querySelector('.section-container-ul');
 
 clickButton.addEventListener('click', function (evt) {
   evt.preventDefault();
@@ -20,7 +20,7 @@ clickButton.addEventListener('click', function (evt) {
     elemSectionUl.classList.add('hidden');
   } else {
     textButton.textContent = 'Показать все';
-    elemSectionUl.classList.remove('hidden')
+    elemSectionUl.classList.remove('hidden');
   }
  
 });
