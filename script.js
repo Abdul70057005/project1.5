@@ -1,13 +1,26 @@
-const swiper = new Swiper('.swiper', {
+function initSlider() {
+  new Swiper('.swiper', {
   // Optional parameters
   loop: true,
   pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+    el: '.swiper-pagination',
+    clickable: true,
     },
-  slidesPerView: 1.2,
-  spaceBetween: -10,
-});
+
+}); 
+}
+
+
+function detectDevice() {
+if(window.innerWidth < 768){
+  initSlider();
+} else{
+
+}
+}
+  
+detectDevice();
+
 
 let clickButton = document.querySelector('.section-form__button');
 let textButton = document.querySelector('.section-form__label');
@@ -21,6 +34,5 @@ clickButton.addEventListener('click', function (evt) {
   } else {
     textButton.textContent = 'Показать все';
     elemSectionUl.classList.remove('hidden');
-  }
- 
+  }  
 });

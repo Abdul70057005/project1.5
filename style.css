@@ -56,10 +56,6 @@ body {
     border-top: 1px solid #D9FFF5;
   }
   
-  .section-container-swiper {
-    width: max-content;
-  }
-  
   .swiper-wrapper {
     border-radius: 6px;
     border: 1px solid #EAEAEA;
@@ -93,6 +89,8 @@ body {
   }
 
   .section-form__button {
+    display: flex;
+    align-items: center;
     border: 0;
     background-color: #F8F8F8;
     cursor: pointer;
@@ -139,23 +137,3 @@ body {
     margin-bottom: 90px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
