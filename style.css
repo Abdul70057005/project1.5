@@ -55,6 +55,10 @@ body {
     margin-bottom: 24px;
     border-top: 1px solid #D9FFF5;
   }
+
+  .section-container-swiper {
+    min-width: 0;
+  }
   
   .swiper-wrapper {
     border-radius: 6px;
@@ -63,12 +67,10 @@ body {
   }
  
   .swiper-slide {
-    min-width: 0;
     background: #F8F8F8;
   }
   
   .swiper {
-    width: 320px;
     height: 110px;
   }
 

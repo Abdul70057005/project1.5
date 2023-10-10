@@ -1,26 +1,32 @@
-function initSlider() {
-  new Swiper('.swiper', {
-  // Optional parameters
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    },
-
-}); 
-}
-
-
-function detectDevice() {
-if(window.innerWidth < 768){
-  initSlider();
-} else{
-
-}
-}
-  
-detectDevice();
-
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.innerWidth < 768){
+      swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1.2,
+          spaceBetween: 0,
+        },
+        500: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        680: {
+          slidesPerView: 2.7,
+          spaceBetween: 0,
+        },
+        750: {
+          slidesPerView: 3.0,
+          spaceBetween: 0,
+          }
+      } 
+    });
+  }
+})
 
 let clickButton = document.querySelector('.section-form__button');
 let textButton = document.querySelector('.section-form__label');
